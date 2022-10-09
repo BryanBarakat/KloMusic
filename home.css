@@ -1,0 +1,350 @@
+*,html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth; 
+}
+
+body {
+    background-color: #303030;
+    color: #fff;
+    font-family: 'Poppins',sans-serif;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#303030;
+    padding: 13px 100px 12px 100px
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav .title{
+    font-size: 35px;
+    color: white;
+    letter-spacing: 0.2em;
+    transition: all 300ms ease-in
+}
+
+nav .title:hover{
+    color: pink;
+    transition: all 300ms ease-out;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav li a{
+    color:white;
+    margin-left: 40px;
+}
+
+nav li a:hover{
+    color: pink;
+}
+
+.container{
+    background-image: url(kloe_auto_x2.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 800px;
+    opacity: 0.4;
+}
+
+.vid video {
+    padding-top: 200px;
+    width: 90%;
+    height: 90%;
+    padding-bottom: 200px;
+    padding-left: 50px;
+}
+
+.vid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color:coral;
+    align-items: center;
+    justify-content: center;
+}
+
+.vid h1{
+    font-family: 'Bebas Neue', cursive;
+    text-transform: uppercase;
+    color: black;
+    width: 350px;
+    font-size: 60px;
+    margin-left: 40px;
+}
+
+.vid p{
+    font-family: 'Poppins',sans-serif;
+    color: black;
+    width: 400px;
+    margin-left: 40px;
+}
+
+.quote{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40%;
+    left: 150px;
+}
+
+.quote span{
+    font-family: 'Smooch', cursive;
+}
+
+.quote a{
+    font-size: small;
+    text-decoration: none;
+    color: white;
+    padding: 6px 25px;
+    border: 1px solid white;
+}
+
+.quote .button a{
+    position: relative;
+    left: 30%;
+    top: 20px;
+    transition: all 300ms ease-in;
+}
+
+.quote .button a:hover{
+    background-color: rgba(255, 255, 0, 0.616);
+    transition: all 300ms ease-out;
+}
+
+.shows{
+    padding-top: 90px;
+    padding-bottom: 40px;
+    background-color: #ffc324;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+
+.shows img{
+    margin: 0 auto 50px auto;
+    width:250px;
+    height:250px;
+    transition: all 300ms ease-in;
+}
+
+.shows img:hover{
+    transform: scale(1.5);
+    transition: all 300ms ease-out;
+}
+
+footer .logos ul li a img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    margin-top: 100px;
+}
+
+.logos ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos ul li{
+    margin: 50px;
+}
+
+footer p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.service{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding-top: 270px;
+    padding-bottom: 270px;
+    margin: 0 auto;
+    background-color: 	dodgerblue;
+    align-items: center;
+    justify-content: center;
+}
+
+.service img{
+    width: 40%;
+    height: 70%;
+    margin-bottom: 30px;
+}
+
+.service p{
+    font-family: 'Poppins',sans-serif;
+    text-transform: uppercase;
+    color: black;
+    width: 60%;
+    margin: auto;
+    font-size: 100%;
+}
+
+.service div{
+    text-align: center;
+}
+
+.service h1{
+    color: black;
+    font-family: 'Bebas Neue', cursive;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 1250px){
+    body{
+        font-size: smaller;
+    }
+
+    .shows img{
+        width: 70%;
+        height: 70%;
+    }
+
+    .vid h1{
+        font-size: 40px;
+    }
+
+}
+
+@media only screen and (max-width: 900px){
+    .service{
+        display: block;
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .service img{
+        width: 20%;
+        height: 20%;
+    }
+
+    .service .service1,.service .service2{
+        margin-bottom: 100px;
+    }
+
+    .service p{
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px){
+
+    nav .title {
+        margin-left: -50px;
+    }
+
+    nav ul{
+        margin-right: -50px;
+        font-size: smaller;
+    }
+    
+    .vid h1{
+        font-size: 20px;
+        width: 50%;
+    }
+    .vid p{
+        font-size: 8px;
+        width: 50%;
+    }
+
+    .shows img{
+        width:100px;
+        height:180px;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    nav ul{
+        display: none;
+    }
+
+    .shows img{
+        width: 80%
+    }
+
+    footer .logos ul li a img{
+        width: 50%;
+        height: 50%;
+    }
+
+    .logos ul li{
+        margin: 20px;
+    }
+
+    footer .logos ul li a img{
+        width: 30px;
+        height: 30px;
+    }
+
+    .service p{
+        width: 50%;
+    }
+
+    .vid video{
+        text-align: center;
+        width: 70%;
+        margin: 0% auto;
+        padding-left: 0;
+    }
+
+    .vid h1{
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        top: -140px;
+        width: 400px;
+    }
+
+    .vid .phrases p{
+        text-align: center;
+        margin: 0 auto;
+        position: relative;
+        top: -100px;
+    }
+
+    .shows img{
+        width: 80%;
+        height: 80%;
+    }
+
+    .shows{
+        padding: 25px 25px;
+    }
+
+    .vid{
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media only screen and (max-width: 550px){
+    .quote{
+        font-size: smaller;
+        left: 50px;
+    }
+
+    .quote .button a{
+        left: 20%;
+        top: 40px;
+    }
+}
